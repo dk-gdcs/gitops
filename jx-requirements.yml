@@ -20,7 +20,7 @@ spec:
   - key: dev
   - key: staging
   ingress:
-    domain: ""
+    domain: "jenkinsx.interview.gdcs.pl"
     externalDNS: false
     ignoreLoadBalancer: true
     kind: ingress
