@@ -32,9 +32,11 @@ jxRequirements:
     registry: ghcr.io
   environments:
   - key: dev
+    owner: dk-gdcs
+    repository: gitops
   - key: staging
   ingress:
-    domain: change.me
+    domain: jenkinsx.interview.gdcs.pl
     ignoreLoadBalancer: true
     kind: ingress
     namespaceSubDomain: .jx.
@@ -42,6 +44,8 @@ jxRequirements:
       email: ""
       enabled: false
       production: false
+  pipelineUser:
+    username: dk-gdcs
   repository: bucketrepo
   secretStorage: vault
   vault: {}
